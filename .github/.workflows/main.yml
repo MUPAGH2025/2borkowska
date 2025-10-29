@@ -1,7 +1,7 @@
-name: sprawozdanie 
+name: sprawozdanie.yml
 on: push
 jobs: 
   pdf:
     runs-on: ubuntu-22.04
     steps:
-      - run:pip install scipy, pint, open_atmos_jupyter_utils
+      - run: pip install scipy pint open_atmos_jupyter_utils
