@@ -8,7 +8,7 @@ jobs:
       - uses: actions/checkout@v4
       - run: sudo apt-get install texlive-xetex inkscape pandoc
       - run: pip install nbconvert
-      - run: python -m nbconvert --to pdf --no-input --execute projekt-shallow_water_v2.ipynb --output sprawozdanie_EwelinaBorkowska --LatexPreprocessor.title="Modelowanie układów przepływowych - równania wody płytkiej" --LatexPreprocessor.author_names="Ewelina Borkowska"
+      - run: python -m nbconvert --to pdf --no-input --execute projekt-EwelinaBorkowska.ipynb --output sprawozdanie_EwelinaBorkowska --LatexPreprocessor.title="Modelowanie układów przepływowych - równania wody płytkiej" --LatexPreprocessor.author_names="Ewelina Borkowska"
       - uses: actions/upload-artifact@v4
         with:
           path: sprawozdanie_EwelinaBorkowska.pdf
